@@ -82,7 +82,7 @@ if ($stmt === false) {
     <style>
         table { width: 100%; border-collapse: collapse; }
         th, td { padding: 8px; border: 1px solid #ddd; text-align: left; }
-        th { background-color: #f4f4f4; }
+        th { background-color:rgb(94, 20, 192); }
     </style>
 </head>
 <body>
@@ -126,8 +126,13 @@ if ($stmt === false) {
             <td><?= $row['EmpNo'] ?></td>
             <td><?= $row['EmpName'] ?></td>
             <td><?= $row['Department'] ?></td>
-            <td><?= $row['InTime'] ? $row['InTime']->format('H:i') : 'A' ?></td>
-            <td><?= $row['OutTime'] ? $row['OutTime']->format('H:i') : 'A' ?></td>
+            
+            <td style="color: green;<?= $row['InTime'] ? '' : 'background-color: red;' ?>"><?= $row['InTime'] ? $row['InTime']->format('H:i') : '<span style="color: white;">A</span>' ?></td>
+
+            <td style="color: green; <?= $row['OutTime'] ? '' : 'background-color: red;' ?>">
+    <?= $row['OutTime'] ? $row['OutTime']->format('H:i') : '<span style="color: red;">A</span>' ?>
+</td>
+
             <td><?= $row['Hours'] ?? '' ?></td>
             <td><?= $row['Minutes'] ?? '' ?></td>
             <td><?= $row['ExtraOT'] ?? '' ?></td>

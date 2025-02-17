@@ -1,9 +1,9 @@
 <?php
-$serverName = "EMD-SYS-PRIME\NJSQL"; // Update with your server details
+$serverName = "SERVER HOST"; // Update with your server details
 $connectionOptions = array(
     "Database" => "attend",
     "Uid" => "sa",
-    "PWD" => "Windsor@1"
+    "PWD" => "PASSWORD"
 );
 
 // Connect to SQL Server

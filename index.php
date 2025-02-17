@@ -59,7 +59,7 @@ $stmt = sqlsrv_query($conn, $sql, $params);
 </head>
 <body>
 
-<h2 align="center">DISHA ENTERPRISE ATTENDANCE SHEET - VATVA</h2>
+<h2 align="center">NEERWEB SOLUTION ATTENDANCE SHEET - VATVA</h2>
 
 <!-- Date selection -->
 <form method="POST" action="index.php">
